@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="pl.sda.poznan.controller.ConnectionDialogController"
+            prefHeight="400.0" prefWidth="600.0">
+<headerText>
+    Type specific data below to play in multiplayer mode through local network
+</headerText>
+    <content>
+        <GridPane>
+            <Label text="Server adress: " GridPane.rowIndex="0" GridPane.columnIndex="0">
+                <GridPane.margin>
+                    <Insets bottom="20"/>
+                </GridPane.margin>
+            </Label>
+
+            <TextField fx:id="serverAdressTextField" GridPane.rowIndex="0" GridPane.columnIndex="1">
+                    <GridPane.margin>
+                        <Insets bottom="20"/>
+                    </GridPane.margin>
+            </TextField>
+
+
+            <Label text="Player name: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="playerNameTextField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</DialogPane>
